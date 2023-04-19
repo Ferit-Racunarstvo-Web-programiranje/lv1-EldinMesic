@@ -9,6 +9,7 @@
 * {
     box-sizing: border-box;
     font-family: var(--primary-font);
+	font-style: normal;
     margin: 0;
     padding: 0;
     color: var(--secondary-color);
@@ -23,9 +24,10 @@ a.active {
     color: var(--primary-color);
 }
 
-button {
+.contactBtn {
     cursor: pointer;
     border: 1px solid var(--primary-color);
+    color: var(--primary-color);
     background-color: #fff;
     padding: 15px 20px;
     border-radius: 5px;
@@ -44,21 +46,21 @@ button a {
 .header-container {
     background-color: #fff;
     padding: 1em 0;
-    height: 120px;
+	height: fit-content;
 }
 
 .header {
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     max-width: screen;
-
-    margin: 0 auto;
+    margin: auto;
     padding: 1em 5em;
 }
 
-.header .logo img {
+.logo {
     width: 200px;
 }
 
@@ -70,17 +72,534 @@ button a {
     gap: 2em;
 }
 
+/*-------------------------------------------------*/
+.intro-container{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    justify-content: space-between;
+	padding: 5em 5em;
+	width: fit-content;
+	height: fit-content;
+	background: rgb(245,252,255);
+    background: linear-gradient(0deg, rgba(245,252,255,1) 0%, rgba(245,252,255,1) 20%, rgba(245,252,255,1) 100%);
+
+}
+
+.intro-text {
+    width: auto;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+.intro-first{
+	font-weight: 600;
+	font-size: 21px;
+	line-height: 150%;
+}
+
+.intro-big{
+	font-weight: 700;
+	font-size: 74px;
+	line-height: 120%;
+}
+
+.intro-subtext{
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 150%;
+}
+
+.introBtn{
+    height: 4em;
+    width:10em;
+    cursor: pointer;
+	font-weight: 400;
+	font-size: 1em;
+	margin-top: 2em;
+	background: var(--primary-color);
+	border-radius: 5px;
+	color:#FFFFFF;
+}
+
+.about-me-img{
+	min-width:40%;
+	height:auto;
+    padding: 1em;
+}
+
+/*------------------------------------*/
+
+.little-title{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.big-title{
+    font-weight: 700;
+	font-size: 74px;
+}
+
+/*------------------------------------*/
+
+.expertise-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+	padding: 8em 5em;
+	width: fit-content;
+	height: fit-content;
+	background:#ffffff;
+}
+
+.exp-text p{
+    padding-top:0.5em;
+	padding-bottom:0em;
+}
+
+.exp-line-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: auto;
+    align-items: center;
+    padding: 5em 0em;
+}
+
+.exp-mini-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em ;
+    padding-bottom: 1em;
+    gap: 2em;
+    background-color: #F5FCFF;
+    width: 20%;
+    height: auto;
+    border-bottom: 0.25em solid #F5FCFF;
+    border-radius: 0.5em;
+
+}
+.exp-mini-container:hover{
+    border-bottom: 0.25em solid #5E3BEE;
+    border-radius: 0.5em;
+}
+
+.exp-title{
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.exp-text{
+    font-size: 1em;
+}
+
+.exp-logo{
+    height: auto;
+    width: 4em;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.75em;
+}
+
+
+
+.about-container{
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+    justify-content: space-between;
+    gap: 5em;
+	padding: 5em 5em;
+	width: fit-content;
+	height: fit-content;
+	background: rgb(245,252,255);
+    background: linear-gradient(0deg, rgba(245,252,255,1) 0%, rgba(245,252,255,1) 20%, rgba(245,252,255,1) 100%);
+}
+
+.about-me-img2{
+    min-width:40%;
+	height:auto;
+}
+
+.about-text p{
+    padding-top:2em;
+	padding-bottom:2em;
+}
+
+.about-text-text{
+    font-weight: 400;
+	font-size: 24px;
+	line-height: 150%;
+}
+
+/*-------------------------------------*/
+
+.recent-projects-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+	padding: 5em 5em;
+	width: fit-content;
+	height: fit-content;
+	background: white;
+
+}
+
+.proj-text-button-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.proj-text p{
+    padding-top:2vh;
+	padding-bottom:2vh;
+}
+
+
+.dribble-button{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    height: 60px;
+    width:190px;
+    cursor: pointer;
+	font-weight: 400;
+	font-size: 16px;
+	align-items: center;
+    background-color: #E62872;
+    color: white;
+    border-radius: 5px;
+}
+
+.dribble-icon{
+    margin-left: 5%;
+    width: 40px;
+    height: 40px;
+}
+
+.portfolio-line-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: fit-content;
+    height: auto;
+    align-items: center;
+    gap:2em;
+    padding-top: 2em;
+}
+
+.port-mini-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0em ;
+    padding-bottom: 1em;
+    background-color: #F5FCFF;
+    width: fit-content;
+    height: auto;
+    border-bottom: 0.25em solid #F5FCFF;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 5px #b3b3b3;
+
+}
+.port-mini-container:hover{
+    border-bottom: 0.25em solid #5E3BEE;
+    border-radius: 0.5em;
+}
+
+.port-img{
+    width: 100%;
+    height: 80%;
+}
+
+.port-little-title{
+    font-weight: 600;
+    font-size: 28px;
+    padding: 5%;
+}
+
+.port-text{
+    font-size: 1em;
+    padding-left: 2em;
+}
+
+.dribble-link{
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration-line: underline;
+    padding-left: 2em;
+}
+
+/*-----------------------------------------*/
+
+.testimonials-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+	padding: 5em 5em;
+	width: fit-content;
+	height: fit-content;
+    background: rgb(245,252,255);
+    background: linear-gradient(0deg, rgba(245,252,255,1) 0%, rgba(245,252,255,1) 20%, rgba(245,252,255,1) 100%);
+}
+
+.testimonials-text p{
+    padding-bottom: 1em;
+}
+
+.testimonials-line-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3em;
+}
+
+.testimonials-mini-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: #F5FCFF;
+    width: fit-content;
+    height: fit-content;
+    padding: 2em;
+    border-radius: 10px;
+    outline: #006B6A;
+    outline-width: 2px;
+    outline-style: solid;
+}
+
+
+
+.user-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+    padding-top: 1em;
+}
+
+.user-container .username{
+    line-height: 1.5em;
+}
+
+.profile-pic{
+    padding: 1em 0;
+    width: 4em;
+    height: auto;
+}
+
+.review-text{
+    font-size: 1em;
+    padding: 2em 0em; 
+}
+
+.rating-img{
+    width: 8em;
+    height: auto;
+}
+
+/*-----------------------*/
+
+.contact-container{
+	padding: 5em 5em;
+    width: 60%;
+	margin:auto;
+}
+.contact-container>p{
+	text-align: center;
+	padding-bottom:2em;
+}
+.contact-container form{
+	text-align: center;
+	padding-bottom:2em;
+}
+.contact-submit{
+	text-align:center;
+}
+.contact-submit button{
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 150%;
+	background: var(--primary-color);
+	border-radius: 5px;
+	color: white;
+	padding:1em 2.5em;
+}
+.terms{
+	text-align:left;
+}
+.terms input{
+	margin:1em;
+}
+.contact-title{
+	font-weight: 600;
+	font-size: 1em;
+	line-height: 150%;
+}
+.contact-large{
+	font-weight: 700;
+	font-size: 2.5em;
+	line-height: 120%;
+}
+.contact-sub{
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 150%;
+}
+.contact-duoinput{
+	padding-top: 2em;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-evenly;
+	gap: 1em;
+}
+.contact-halfinput{
+	text-align: left;
+    width: 100%;
+}
+.contact-halfinput>p{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 150%;
+}
+.contact-halfinput>input{
+	border: 2px solid var(--primary-color);
+	border-radius: 0.5em;
+	font-size:26px;
+	padding:0.3em;
+	width:100%;
+}
+.contact-input{
+	padding-top:2em;
+	width:100%;
+	text-align:left;
+}
+.contact-input>p{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 150%;
+}
+.contact-input>select{
+	border: 2px solid var(--primary-color);
+	border-radius: 0.5em;
+	font-size:26px;
+	padding:0.3em;
+	width:100%;
+}
+.contact-input>input{
+	border: 2px solid var(--primary-color);
+	border-radius: 8px;
+	font-size:18px;
+	min-height:15em;
+	padding:0.3em;
+	width:100%;
+}
+
+/*------------------------------------------*/
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: auto;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #F5FCFF;
+}
+
+
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5%;
+    background-color: #F5FCFF;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+}
+
+.icons{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+
+.policies{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color: black;
+    height: 1px;
+  }
+
+
 @media screen and (max-width: 768px) {
     .header .logo img {
         width: 150px;
     }
 
-    .header {
+    .intro-container, .exp-line-container, .header, .portfolio-line-container, .testimonials-line-container, .footer, .footer nav{
         flex-direction: column;
+        justify-content: start;
+        
     }
 
     .header nav {
         flex-direction: column;
         padding: 20px 0;
+        
+    }
+    .proj-text-button-container{
+        flex-direction: column;
+        padding: 1em;
+    }
+    .about-me-img{
+        width: 100%;
+    }
+    .exp-mini-container{
+        padding: 1em;
+        width: 75%;
+        height: auto;
+    }
+    .contact-container{
+        width: 100%;
     }
 }
