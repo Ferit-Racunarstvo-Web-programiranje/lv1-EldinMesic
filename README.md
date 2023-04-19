@@ -1,7 +1,7 @@
 # LV 1 zadatak - Osobna stranica
 
 ### LINK: 
-
+https://ferit-racunarstvo-web-programiranje.github.io/lv1-EldinMesic/
 <hr />
 
 ## Opis zadatka
